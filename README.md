@@ -2,6 +2,10 @@
 
 ![Download](https://img.shields.io/npm/dt/erenaydb.svg?style=flat-square) ![Download](https://img.shields.io/npm/dm/erenaydb.svg?style=flat-square) ![Download](https://img.shields.io/npm/dw/erenaydb.svg?style=flat-square) ![License](https://img.shields.io/npm/l/erenaydb.svg?style=flat-square)
 
+## What's New In 0.0.7?
+
+### Added MySQL Adapter
+
 Examples
 
 > (QuickDB) Moving Everything to ErenayDB
@@ -48,7 +52,40 @@ db.delete("x") // true
 db.deleteAll() // true
 ```
 
-> RethinkDB Supporting! (If you find any bugs/issues join my [Discord](https://discord.gg/WSvd3E6CNn))
+> MySQL Support(BETA) (If you find any bugs/issues join my [Discord](https://discord.gg/WSvd3E6CNn))
+
+```js
+const db = require("erenaydb");
+
+db.setCheckUpdates(true);
+db.setAdapter("mysql", {
+  host: "localhost",
+  port: "3306",
+  user: "root",
+  password: "password",
+  database: "erenaydb_test"
+});
+db.connect();
+setTimeout(async () => {
+  try {
+    await db.add("x", 1);
+    await db.add("y", 2);
+    await db.add("z", 3);
+    const result = await db.all();
+    console.log(result);
+    
+    // Example custom SQL usage
+    const customResult = await db.customSQL("SELECT * FROM ErenayDB WHERE id = ?", ["y"]);
+    console.log(customResult);
+  } catch (error) {
+    console.error("Error while performing database operations:", error);
+  }
+
+  await erenaydb.disconnect();
+}, 2000);
+```
+
+> RethinkDB Supporting!
 
 ```js
 const db = require("erenaydb")
@@ -56,7 +93,7 @@ db.setAdapter("rethink",
 {
     host: "localhost",
     port: 28015,
-    db: "HarenUptime",
+    db: "ErenayDB_Test",
     schema: "Schema Name" // Not required. You can't define your own schema. Just name.
 })
 
