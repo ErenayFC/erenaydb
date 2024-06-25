@@ -1,0 +1,23 @@
+{
+  "errors": {
+    "blankName": "Please give me a database name. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
+    "blankData": "Please give me a data. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
+    "blankNumber": "Please give me a number. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
+    "oldVersion": "It seems like you are using an outdated version of ErenayDB. Use 'npm update erenaydb' to update module. Join my Discord server: https://discord.gg/WSvd3E6CNn",
+    "notMySQL": "You're not using MySQL adapter. Join my Discord server: https://discord.gg/WSvd3E6CNn"
+  },
+  "success": {
+    "connectionMessages": {
+      "connect": {
+        "mongodb": "Successfully Connected to MongoDB! Discord: https://discord.gg/WSvd3E6CNn",
+        "rethinkdb": "Successfully Connected to RethinkDB! Discord: https://discord.gg/WSvd3E6CNn",
+        "mysql": "Successfully Connected to MySQL! Discord: https://discord.gg/WSvd3E6CNn"
+      },
+      "disconnect": {
+        "mongodb": "Successfully Disconnected From MongoDB! Discord: https://discord.gg/WSvd3E6CNn",
+        "rethinkdb": "Successfully Disconnected From RethinkDB! Discord: https://discord.gg/WSvd3E6CNn",
+        "mysql": "Successfully Disconnected From MySQL. Discord: https://discord.gg/WSvd3E6CNn"
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "author": {
+    "name": "Erenay"
+  },
+  "bugs": {
+    "url": "https://github.com/ErenayFC/erenaydb/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "a JSON/YAML/RethinkDB/MongoDB/MySQL database module",
+  "homepage": "https://github.com/ErenayFC/erenaydb#readme",
+  "keywords": [
+    "erenay",
+    "erenay-api",
+    "erenayapi",
+    "erenaydb",
+    "erenay-db",
+    "json",
+    "jsondb",
+    "yaml",
+    "yamldb",
+    "local",
+    "localstorage",
+    "local storage",
+    "node-json-db",
+    "db",
+    "mongo",
+    "mongoose",
+    "mongodb",
+    "database",
+    "rethinkdb",
+    "rethink",
+    "mysql",
+    "my-sql",
+    "sql",
+    "mysql2",
+    "mysqldb",
+    "mysql-db",
+    "my-sql-db",
+    "mysql-database"
+  ],
+  "license": "MIT",
+  "main": "./file/index.js",
+  "types": "./typings/index.d.ts",
+  "name": "erenaydb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErenayFC/erenaydb.git"
+  },
+  "dependencies": {
+    "logging": "^3.3.0",
+    "node-fetch": "^3.3.2",
+    "lodash": "^4.17.21"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "blankName": "Verinin adını gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
+    "blankData": "Ayarlanacak veriyi gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
+    "blankNumber": "Bir sayı gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
+    "oldVersion": "Görüşüne göre ErenayDB'nin eski bir sürümünü kullanıyorsun. Modülü güncellemek için 'npm update erenaydb' kodunu kullan. Discord'uma katıl: https://discord.gg/WSvd3E6CNn"
+  },
+  "success": {
+    "connectionMessages": {
+      "mongodb": "Başarıyla MongoDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
+      "rethinkdb": "Başarıyla RethinkDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
+      "mysql": "Bağlarıyla MySQL'e bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn"
+    }
+  }
+}
