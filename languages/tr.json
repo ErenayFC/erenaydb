@@ -1,9 +1,0 @@
-{
-    "errors": {
-        "blankName": "[ErenayDB] Verinin adını gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
-        "undefinedName": "[ErenayDB] Verdiğin verinin adı veritabanında bulunmuyor. Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
-        "blankData": "[ErenayDB] Ayarlanacak veriyi gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
-        "blankNumber": "[ErenayDB] Bir sayı gir. Sorun mu yaşıyorsun? Discord'uma gel ve istediğin her şeyi sor. https://discord.gg/WSvd3E6CNn",
-        "oldVersion": "[ErenayDB] Görüşüne göre ErenayDB'nin eski bir sürümünü kullanıyorsun. Modülü güncellemek için 'npm update erenaydb' kodunu kullan. Discord'uma katıl: https://discord.gg/WSvd3E6CNn"
-    }
-}

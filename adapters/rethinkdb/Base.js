@@ -17,7 +17,7 @@ class RethinkBase extends EventEmitter {
       );
     }
     
-    this.message = options.message;
+    this.message = rethinkOptions.message;
     this.rethinkOptions = rethinkOptions;
     this.createConnection();
   }

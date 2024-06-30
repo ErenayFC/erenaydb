@@ -1,9 +1,0 @@
-{
-    "errors": {
-        "blankName": "[ErenayDB] Please give me a database name. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
-        "undefinedName": "[ErenayDB] The name of the data you provided is not in the database. Join my Discord and ask anything. https://discord.gg/WSvd3E6CNn",
-        "blankData": "[ErenayDB] Please give me a data. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
-        "blankNumber": "[ErenayDB] Please give me a number. Are you having errors? Join my Discord server and ask anything. https://discord.gg/WSvd3E6CNn",
-        "oldVersion": "[ErenayDB] It seems like you are using an outdated version of ErenayDB. Use 'npm update erenaydb' to update module. Join my Discord server: https://discord.gg/WSvd3E6CNn"
-    }
-}

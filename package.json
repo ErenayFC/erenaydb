@@ -52,5 +52,5 @@
     "node-fetch": "^3.3.2",
     "lodash": "^4.17.21"
   },
-  "version": "0.0.8"
+  "version": "0.0.9"
 }

@@ -10,7 +10,7 @@ class Base extends EventEmitter {
    * @returns {Base}
    * @example const db = new Base("mongodb://localhost/mydb");
    */
-  constructor(mongoURL, connectionOptions = {}) {
+  constructor(mongoURL, options = {}) {
     super();
     if (!mongoURL || !mongoURL.startsWith("mongodb"))
       throw new TypeError("No mongodb url was provided!");
@@ -18,9 +18,9 @@ class Base extends EventEmitter {
       throw new TypeError(
         `Expected a string for mongodbURL, received ${typeof mongoURL}`
       );
-    if (typeof connectionOptions !== "object")
+    if (typeof options !== "object")
       throw new TypeError(
-        `Expected Object for connectionOptions, received ${typeof connectionOptions}`
+        `Expected Object for options, received ${typeof options}`
       );
     try {
       logger = require("../../logger/logger");
@@ -32,7 +32,6 @@ class Base extends EventEmitter {
     this.mongoURI = mongoURL;
 
     this.message = options.message;
-    this.options = connectionOptions;
 
     this._create();
 

@@ -7,9 +7,16 @@
   },
   "success": {
     "connectionMessages": {
-      "mongodb": "Başarıyla MongoDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
-      "rethinkdb": "Başarıyla RethinkDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
-      "mysql": "Bağlarıyla MySQL'e bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn"
+      "connect": {
+        "mongodb": "Başarıyla MongoDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
+        "rethinkdb": "Başarıyla RethinkDB'ye bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn",
+        "mysql": "Bağlarıyla MySQL'e bağlanıldı! Discord: https://discord.gg/WSvd3E6CNn"
+      },
+      "disconnect": {
+        "mongodb": "MongoDB ile Bağlantı Başarıyla Kesildi! Discord: https://discord.gg/WSvd3E6CNn",
+        "rethinkdb": "RethinkDB ile Bağlantı Başarıyla Kesildi! Discord: https://discord.gg/WSvd3E6CNn",
+        "mysql": "MySQL ile Bağlantı Başarıyla Kesildi. Discord: https://discord.gg/WSvd3E6CNn"
+      }
     }
   }
 }

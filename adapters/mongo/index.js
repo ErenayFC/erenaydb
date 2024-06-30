@@ -6,7 +6,7 @@ const _ = require('lodash');
 
 class MongoDB extends Base {
   constructor(options) {
-    super(options.mongoOptions["url"]);
+    super(options.mongoOptions["url"], options);
     this.schema = options.schema ? Schema(options.schema) : Schema("ErenayDB");
   }
 
