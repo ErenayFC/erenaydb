@@ -16,6 +16,8 @@ class RethinkBase extends EventEmitter {
         'Please install "logging" modules. Use this command to install: "npm i logging"'
       );
     }
+    
+    this.message = options.message;
     this.rethinkOptions = rethinkOptions;
     this.createConnection();
   }

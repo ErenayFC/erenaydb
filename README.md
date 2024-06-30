@@ -57,7 +57,6 @@ db.deleteAll() // true
 ```js
 const db = require("erenaydb");
 
-db.setCheckUpdates(true);
 db.setAdapter("mysql", {
   host: "localhost",
   port: "3306",
@@ -65,8 +64,7 @@ db.setAdapter("mysql", {
   password: "password",
   database: "erenaydb_test"
 });
-db.connect();
-setTimeout(async () => {
+db.connect().then(async() => {
   try {
     await db.add("x", 1);
     await db.add("y", 2);
@@ -75,14 +73,14 @@ setTimeout(async () => {
     console.log(result);
     
     // Example custom SQL usage
-    const customResult = await db.customSQL("SELECT * FROM ErenayDB WHERE id = ?", ["y"]);
+    const customResult = await erenaydb.customSQL("SELECT * FROM ErenayDB WHERE id = ?", ["y"]);
     console.log(customResult);
   } catch (error) {
     console.error("Error while performing database operations:", error);
   }
 
   await erenaydb.disconnect();
-}, 2000);
+});
 ```
 
 > RethinkDB Supporting!

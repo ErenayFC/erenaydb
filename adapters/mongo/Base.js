@@ -31,6 +31,7 @@ class Base extends EventEmitter {
     }
     this.mongoURI = mongoURL;
 
+    this.message = options.message;
     this.options = connectionOptions;
 
     this._create();
