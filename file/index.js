@@ -14,6 +14,10 @@ module.exports = {
         );
       }
 
+      this.message = this.lang
+        ? require(`../language/${this.lang.toLowerCase()}.json`)
+        : require(`../language/en.json`);
+
       this.options = {
         dbName: this.file || "erenaydb",
         dbFolder: this.folder || "erenaydb",
@@ -30,11 +34,6 @@ module.exports = {
         schema: this.mongoOptions?.schema || this.rethinkOptions?.db,
         message: this.message
       };
-
-      this.message = this.lang
-        ? require(`../language/${this.lang.toLowerCase()}.json`)
-        : require(`../language/en.json`);
-
       resolve();
     });
   },

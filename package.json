@@ -45,12 +45,12 @@
   "name": "erenaydb",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ErenayFC/erenaydb.git"
+    "url": "https://github.com/ErenayFC/erenaydb.git"
   },
   "dependencies": {
     "logging": "^3.3.0",
     "node-fetch": "^3.3.2",
     "lodash": "^4.17.21"
   },
-  "version": "0.0.9"
+  "version": "0.0.10"
 }

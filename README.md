@@ -92,7 +92,7 @@ db.setAdapter("rethink",
     host: "localhost",
     port: 28015,
     db: "ErenayDB_Test",
-    schema: "Schema Name" // Not required. You can't define your own schema. Just name.
+    schema: "Schema Name" // Not required. You can define your own schema. Just name.
 })
 
 await db.set("x.y.z", "abc") // abc
@@ -122,7 +122,7 @@ const db = require("erenaydb")
 db.setAdapter("mongo", 
 {
     url: "Your Mongo URL", 
-    schema: "Schema Name" // Not required. You can't define your own schema. Just name.
+    schema: "Schema Name" // Not required. You can define your own schema. Just name.
 })
 
 await db.set("x.y.z", "abc") // abc
